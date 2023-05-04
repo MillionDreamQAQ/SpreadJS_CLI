@@ -1,0 +1,36 @@
+#! /usr/bin/env node
+const program = require("commander");
+const chalk = require("chalk");
+const ora = require("ora");
+const Inquirer = require("inquirer");
+
+program.version(`my-cli ${require("../package.json").version}`);
+program.name("my-cli").usage(`<command> [option]`);
+
+program
+  .command("create <project-name>")
+  .description("create a new project")
+  .option("-f, --force", "overwrite target directory if it exist")
+  .action((projectName, options) => {
+    require("../lib/create.js")(projectName, options);
+  });
+
+program
+  .command("config [value]") // config 命令
+  .description("inspect and modify the config")
+  .option("-g, --get <key>", "get value by key")
+  .option("-s, --set <key> <value>", "set option[key] is value")
+  .option("-d, --delete <key>", "delete option by key")
+  .action((value, keys) => {
+    console.log(value, keys);
+  });
+
+program.on("--help", function () {
+  console.log(
+    `\nRun ${chalk.cyan(
+      "my-cli <command> --help"
+    )} for detailed usage of given command.\n`
+  );
+});
+
+program.parse(process.argv);
