@@ -1,8 +1,7 @@
 #! /usr/bin/env node
 const program = require("commander");
 const chalk = require("chalk");
-const ora = require("ora");
-const Inquirer = require("inquirer");
+const figlet = require("figlet");
 
 program.version(`my-cli ${require("../package.json").version}`);
 program.name("my-cli").usage(`<command> [option]`);
@@ -26,6 +25,16 @@ program
   });
 
 program.on("--help", function () {
+  console.log(
+    "\r\n",
+    figlet.textSync("my-cli", {
+      font: "Larry 3D",
+      horizontalLayout: "default",
+      verticalLayout: "default",
+      width: 80,
+      whitespaceBreak: true,
+    })
+  );
   console.log(
     `\nRun ${chalk.cyan(
       "my-cli <command> --help"
