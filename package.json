@@ -1,6 +1,6 @@
 {
-  "name": "spread-cli",
-  "version": "1.0.0",
+  "name": "spreadjs-cli",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   "bin": "bin/enter",
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "axios": "^1.4.0",
     "chalk": "4.1.2",
@@ -19,5 +19,24 @@
     "fs-extra": "^11.1.1",
     "inquirer": "8.2.5",
     "ora": "5.4.1"
-  }
+  },
+  "keywords": [
+    "spread-sheets",
+    "javascript spreadsheet",
+    "javascript excel",
+    "excel io",
+    "sheets",
+    "sheet",
+    "javascript",
+    "excel",
+    "grapecity",
+    "spreadjs",
+    "React spreadsheet",
+    "Angular spreadsheet",
+    "Vue spreadsheet",
+    "Online excel",
+    "Online spreadsheet",
+    "PivotTable spreadsheet",
+    "Online spreadsheet designer"
+  ]
 }

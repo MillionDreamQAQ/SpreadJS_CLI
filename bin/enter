@@ -3,8 +3,8 @@ const program = require("commander");
 const chalk = require("chalk");
 const figlet = require("figlet");
 
-program.version(`spread-cli ${require("../package.json").version}`);
-program.name("spread-cli").usage(`<command> [option]`);
+program.version(`spreadjs-cli ${require("../package.json").version}`);
+program.name("spreadjs-cli").usage(`<command> [option]`);
 
 program
   .command("create <project-name>")
@@ -37,7 +37,7 @@ program.on("--help", function () {
   );
   console.log(
     `\nRun ${chalk.cyan(
-      "spread-cli <command> --help"
+      "spreadjs-cli <command> --help"
     )} for detailed usage of given command.\n`
   );
 });
