@@ -2,45 +2,45 @@
 这是一个基于 SpreadJS 纯前端表格控件进行快速开发的原型脚手架工具，提供：
 - 快速建立基于 SpreadJS 的在线类 Excel 应用初始 Demo
 - 通过模板选择 Vue2/Vue3/React 多种原型版本
-- 可选择是否在原型中创建带有表格编辑器插件 (Designer) 的 Demo
+- 可选择是否在原型中创建带有表格编辑器插件（Designer) 的 Demo
 
-## 支持的 Node 版本
-- Node 版本应大于 14.20.0，推荐使用 16.xx.x 或 18.xx.x 版本
+# **支持的 Node 版本** 
+Node 版本应大于 14.20.0，推荐使用 16.xx.x 或 18.xx.x 版本
 
-## 使用步骤
-### 安装 SpreadJS CLI
-注：如果使用 npx 方式运行，可跳过此步骤
-```JavaScript
-// 如果想直接运行 spreadjs-cli 命令，需要全局安装，或者使用 npx 方式运行
-npm  install -g spreadjs-cli
-```
-### 通过 spreadjs-cli 创建 demo
-```JavaScript
-spreadjs-cli create my-first-demo
-```
-或
-```JavaScript
-npx spreadjs-cli create my-first-demo
-```
-### 选择模板原型
-```shell
-✔ Loading list...
-? Please choose which template for your first SpreadJS demo? (Use arrow keys)
-> PureJS-with-Designer
-  Vue3
-  Vue3-with-Designer
-  Vue2
-  Vue2-with-Designer
-  React
-  React-with-Designer
-```
-### 进入目录，并运行
-```JavaScript
-cd my-first-demo
-npm run start
-```
+# 使用步骤
+1. **安装 spreadjs cli**  
+注：如果使用 npx 方式运行，可跳过此步骤  
+    ```JavaScript
+    // 如果想直接运行 spreadjs-cli 命令，需要全局安装，或者使用 npx 方式运行
+    npm  install -g spreadjs-cli
+    ```
+2. **通过 spreadjs-cli 创建 demo**
+    ```JavaScript
+    spreadjs-cli create my-first-demo
+    ```
+    或
+    ```JavaScript
+    npx spreadjs-cli create my-first-demo
+    ```
+3. **选择模板原型**
+    ```
+    ✔ Loading list...
+    ? Please choose which template for your first SpreadJS demo? (Use arrow keys)
+    > PureJS-with-Designer
+      Vue3
+      Vue3-with-Designer
+      Vue2
+      Vue2-with-Designer
+      React
+      React-with-Designer
+    ```
+4. **进入目录，并运行**
+    ```JavaScript
+    cd my-first-demo
+    npm run start
+    ```
 
-## 有关 SpreadJS 前端表格控件
+# 有关 SpreadJS 前端表格控件
 [纯前端电子表格控件，可嵌入您系统的在线 Excel](https://www.grapecity.com.cn/developer/spreadjs)
 葡萄城 SpreadJS 是最完整的企业类 Excel 应用前端解决方案，可快速提供类似 Microsoft® Excel 的[电子表格体验](https://demo.grapecity.com.cn/SpreadJS/WebDesigner/content/index.html)。 SpreadJS 还提供对 [Vue](https://www.grapecity.com.cn/developer/spreadjs/vue)、[React](https://www.grapecity.com.cn/developer/spreadjs/react)、[Angular](https://www.grapecity.com.cn/developer/spreadjs/angular) 和 TypeScript 的全面支持。
 
@@ -51,12 +51,12 @@ npm run start
 
 **[欢迎下载 SpreadJS，立即试用](https://www.grapecity.com.cn/developer/spreadjs/download)**
 
-## NPM 方式安装  
+## NPM 方式安装 SpreadJS
 ```JavaScript
 npm  install @grapecity/spread-sheets
 ```
 
-## 产品文档
+## SpreadJS 产品文档
 - **[产品文档](https://demo.grapecity.com.cn/spreadjs/help/docs/overview)**
 - **[API 参考](https://demo.grapecity.com.cn/spreadjs/help/api/modules/GC.Data)**
 
